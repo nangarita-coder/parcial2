@@ -2,12 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Detail from "./Detail";
 import Bandas from "./Bandas";
-import NavBar from "./src/Navbar";
+import Barra from "./Barra";
 
 function App() {
  return (
    <div className="App">
-     <NavBar></NavBar>
+     <Barra></Barra>
      <BrowserRouter>
        <Routes>
          <Route path="/" element={<Bandas />} />

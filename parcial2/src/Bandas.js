@@ -1,6 +1,9 @@
 import Banda from "./Banda";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import CardImg from "react-bootstrap/esm/CardImg";
+
 
 const { useEffect, useState } = require("react");
 
@@ -39,9 +42,9 @@ function Bandas () {
            <tr key={banda.id}>
              <td>{banda.id}</td>
              <td>{banda.name}</td>
-             <td>{item.country}</td>
-             <td>{item.genre}</td>
-             <td>{item.description}</td>
+             <td>{banda.country}</td>
+             <td>{banda.genre}</td>
+             <td>{banda.description}</td>
            </tr>
 
          ))}
@@ -53,8 +56,13 @@ function Bandas () {
      </div>
 
    </div>
+
      
  </div>
+ 
+
+
+ 
 
    )
 }
